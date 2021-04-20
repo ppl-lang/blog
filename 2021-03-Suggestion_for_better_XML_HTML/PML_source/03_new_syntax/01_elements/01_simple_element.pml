@@ -42,8 +42,8 @@
     code]
 
     Another advantage of the new syntax is that bracket matching in text editors (available in most modern versions) becomes more useful. In the case of XML/HTML, the [c <] of the opening tag matches only the [c >] of the [i opening] tag, which is of little use. In VSCode it looks like this:
-    [image src=images/bracket_matching_XML.png border=yes align=left width=120 html_alt=XML bracket matching in VSCode]
+    [image source=images/bracket_matching_XML.png border=yes align=left width=120 html_alt=XML bracket matching in VSCode]
     
     In pXML the [c \[] of the opening tag matches the [c \]] of the [i closing] tag, which is much more helpful, especially in case of elements with lots of nested content. VSCode example:
-    [image src=images/bracket_matching_PXML.png border=yes align=left width=120 html_alt=pXML bracket matching in VSCode]
+    [image source=images/bracket_matching_PXML.png border=yes align=left width=120 html_alt=pXML bracket matching in VSCode]
 ]

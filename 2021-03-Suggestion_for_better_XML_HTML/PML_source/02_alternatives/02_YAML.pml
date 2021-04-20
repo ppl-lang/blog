@@ -3,7 +3,7 @@
     One way to minimize verbosity is to use indentation to define structure. [link url=https://yaml.org/ text=YAML] is probably the most popular language that uses this technique.
 
     Here is a reprint of a JSON example we saw previously:
-    [code language=JSON
+    [code lang=JSON
         {
             "person": {
                 "name": "Albert",
@@ -18,7 +18,7 @@
     code]
 
     In YAML, this becomes:
-    [code language=YAML
+    [code lang=YAML
         person:
             name: Albert
             married: true
@@ -41,12 +41,12 @@
     Moreover, while using indentation to define structure effectively reduces verbosity, it also leads to much more lines of code for certain types of documents. The reason is that each child element [i must] be written on a new line.
 
     To illustrate this, let's see how the simple HTML one-liner we used in the previous chapter would be written in YAML. Here is a reprint of the HTML:
-    [code language=HTML
+    [code lang=HTML
         <p style="color:red;"><i>foo</i> <b>bar</b></p>
     code]
 
     In YAML the code would look like this:
-    [code language=YAML
+    [code lang=YAML
         p:
             style: 'color:red;'
             content:

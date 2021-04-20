@@ -29,34 +29,16 @@
               ]
     code]
 
-    Element with metadata:
+    Attributes:
     [code
-        String metadata:
-        XML:  <div id = "unplug_warning" class = "warning big-text">Unplug power cord before opening!</div>
-        pXML: [div [#id unplug_warning] [#class warning big-text]Unplug power cord before opening!]
-
-        Structured metadata:
-        XML:  not supported
-        pXML: 
-            [grid_cell
-                [#GUI_data
-                    [grid_position
-                        [line 10]
-                        [column 2]
-                    ]
-                    [color
-                        [text purple]
-                        [background yellow]
-                    ]
-                ]
-                [content Cell content]
-            ]        
+        XML:  <div id="unplug_warning" class="warning big-text">Unplug power cord before opening!</div>
+        pXML: [div (id=unplug_warning class="warning big-text")Unplug power cord before opening!]
     code]
 
     Escaping:
     [code
-        XML:  note = "Watch out for &lt;, &gt;, &quot;, &apos;, &amp;, [, ], and \ characters"
-        pXML: [#note Watch out for <, >, ", ', &, \[, \], and \\ characters]    
+        XML:  <note>Watch out for &lt;, &gt;, &quot;, &apos;, &amp;, [, ], and \ characters</note>
+        pXML: [note Watch out for <, >, ", ', &, \[, \], and \\ characters]    
     code]
 
     Comments:

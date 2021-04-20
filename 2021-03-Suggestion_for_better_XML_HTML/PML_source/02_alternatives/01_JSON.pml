@@ -4,7 +4,7 @@
 
     To understand why (in the context of [i syntax]), let's have a look at a simple data structure in JSON:
 
-    [code language=JSON
+    [code lang=JSON
         {
             "person": {
                 "name": "Albert",
@@ -20,7 +20,7 @@
 
     In XML, the code could look like this:
 
-    [code language=XML id=albert_example
+    [code lang=XML id=albert_example
         <?xml version="1.0" encoding="UTF-8"?>
         <person>
             <name>Albert</name>
@@ -48,41 +48,41 @@
     Let's try.
 
     Here is a simple HTML snippet:
-    [code language=HTML
+    [code lang=HTML
         <p>foo bar</p>
     code]
 
     In JSON, we could express this as follows:
-    [code language=JSON
+    [code lang=JSON
         { "p": "foo bar" }
     code]
 
     Let's write [c foo] in [i italics], and [c bar] in [b bold].
 
     HTML:
-    [code language=HTML
+    [code lang=HTML
         <p><i>foo</i> <b>bar</b></p>
     code]
 
     JSON:
-    [code language=JSON
+    [code lang=JSON
         { "p": [ { "i":"foo" }, " ", { "b": "bar" } ] }
     code]
 
     Now we want to display everything in red: 
 
     HTML:
-    [code language=HTML
+    [code lang=HTML
         <p style="color:red;"><i>foo</i> <b>bar</b></p>
     code]
 
     JSON:
-    [code language=JSON
+    [code lang=JSON
         { "p": { "style": "color:red;", "content": [ { "i": "foo" }, " ", { "b": "bar" } ] } }
     code]
 
     We can prettify to make the code easier to read:
-    [code language=JSON
+    [code lang=JSON
         {
             "p":{
                 "style":"color:red;",

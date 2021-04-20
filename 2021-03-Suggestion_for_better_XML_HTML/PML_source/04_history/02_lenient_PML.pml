@@ -1,16 +1,16 @@
 [ch Lenient Syntax in PML id=lenient_PML
 
-    An important aspect of PML is the parser's ability to work in [i lenient mode]. This mode supports very targeted syntax simplifications, aiming to eliminate as much "noise" as possible. It should be as easy as possible to write articles and books in PML. Here is an example to illustrate the advantage of the [i lenient syntax]:
+    An important aspect of PML is the parser's ability to work in [i lenient mode]. This mode supports very targeted syntax simplifications, aiming to eliminate as much "noise" as possible. It should be [i easy] to write articles and books in PML. Here is an example to illustrate the advantage of the [i lenient syntax]:
 
-    Below is the code of a simple PML document, written in strict pXML:
+    This is the code of a simple PML document, written in strict pXML:
 
     [code
-        [document [title Test]
-            [chapter [title An Unusual Surprise]
-                [paragraph Look at the following picture:]
-                [image [source images/strawberries.jpg]]
-                [paragraph Text of paragraph 2]
-                [paragraph Text of paragraph 3]
+        [doc (title=Test)
+            [ch (title="An Unusual Surprise")
+                [p Look at the following picture:]
+                [image (source=images/strawberries.jpg)]
+                [p Text of paragraph 2]
+                [p Text of paragraph 3]
             ]
         ]
     code]
@@ -21,7 +21,7 @@
         [doc Test
             [ch An Unusual Surprise
                 Look at the following picture:
-                [img images/strawberries.jpg]
+                [image images/strawberries.jpg]
                 
                 Text of paragraph 2
 
@@ -33,22 +33,23 @@
     Let's briefly see how this works:
 
     [list
+[-
         [el
             [c document] becomes [c doc]:
 
             Most PML tags have alternative short names, besides their standard, more verbose name (e.g. [c doc] instead of [c document], [c p] instead of [c paragraph], [c ch] instead of [c chapter], etc.)
         ]
-
+-]
         [el
-            [c \[title Test\]] becomes [c Test]:
+            [c doc (title=Test)] becomes [c doc Test]:
 
-            Some elements (for example [c chapter] and [c image]) have one so-called [i default child-element]. For that element only the value can be specified - it is not necessary to write [c \[name value\]]
+            Some elements (for example [c doc]) have a [i default attribute]. For that attribute only the value needs to be specified - instead of writing [c (name=value)] we can simply write  [c value]
         ]
 
         [el
-            [c \[paragraph Text of paragraph 2\]] becomes [c Text of paragraph 2]:
+            [c \[p Text of paragraph 2\]] becomes [c Text of paragraph 2]:
 
-            If text is not contained in a [c paragraph] (or simply [c p]) element, it is automatically embedded in a [c paragraph] element.
+            Free text not contained in an element is automatically embedded in a [c p] (paragraph) element.
 
             Text separated by two new lines automatically creates a paragraph break.
         ]
@@ -75,7 +76,7 @@
             Open file [c output/example.html] in your browser.
 
             The result looks like this:
-            [img images/lenient_example.png border=yes width=400 html_alt=HTML page created by PML]
+            [image images/lenient_example.png border=yes width=400 html_alt=HTML page created by PML]
         ]
 
         [el Right-click on the text, and select 'View Page Source' if you want to see the HTML code produced by the  [i PML to HTML Converter].]

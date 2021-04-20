@@ -1,4 +1,4 @@
-[ch Naming Rules id=name_rules
+[ch Name Rules id=name_rules
 
     For compatibility reasons, the rules for element names in pXML must be the same as in [link url=https://www.w3schools.com/xml/xml_elements.asp text=XML]. Element names:
     [list
