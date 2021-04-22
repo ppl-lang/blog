@@ -1,6 +1,6 @@
 [ch Implementation
 
-    After using the PML syntax for some time to create real articles (not just tests), I was somewhat confident that the pXML syntax should work well for XML documents too. However, to eliminate doubts, I wanted a [i proof of concept] for pXML, before publishing this article. Therefore I created a parser that reads the pXML syntax presented in this article. The parser is written in Java and has no dependencies. I will open-source it.
+    After using the PML syntax for some time to create real articles (not just tests), I was somewhat confident that the pXML syntax should work well for XML documents too. However, to eliminate doubts, I wanted a [i proof of concept] for pXML, before publishing this article. Therefore, I created a parser that reads the pXML syntax presented in this article. The parser is written in Java and has no dependencies. I will open-source it.
     
     The following features are currently implemented:
 
@@ -10,7 +10,7 @@
         [el
             Read a pXML document into an [c org.w3c.dom.Document] Java object.
 
-            This is the most powerful feature. Once we have a Java [c Document] object we can use all of XML's [link url=https://en.wikipedia.org/wiki/XML#Related_specifications text=related specifications] with a pXML document. A few examples are:
+            This is the most powerful feature. Since we have a Java [c Document] object we can use all of XML's [link url=https://en.wikipedia.org/wiki/XML#Related_specifications text=related specifications] with a pXML document. A few examples are:
 
             [list
                 [el validate a document with XML Schema (W3C), RELAX NG, or Schematron]

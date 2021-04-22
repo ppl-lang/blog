@@ -74,7 +74,7 @@
     [code lang = none
         [config
             [size XL]
-            [colors (background=black foreground="light green"]
+            [colors (background=black foreground="light green")]
             [transparent true]
         ]
     code]
@@ -97,5 +97,5 @@
 
     [b Conclusion]
     
-    The most verbose syntax is XML (especially in case of long parameter names). The least verbose one is pXML. Less noise implies 'easy to read and write for humans'.
+    The most verbose syntax is XML (especially for long parameter names). The least verbose one is pXML. Less noise implies 'easy to read and write for humans'.
 ]

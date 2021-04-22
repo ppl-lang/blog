@@ -115,5 +115,5 @@
 
     XML doesn't have this problem. The content of [c p] is always a list of child elements.
 
-    At this point you hopefully agree that we can stop further investigation and move on. The JSON syntax is a bad fit for describing markup code like HTML documents in a human-friendly way. That doesn't mean of course that 'JSON is bad'. JSON is a good choice in many cases. It is a native part of Javascript, well supported in most programming languages, and there are lots of libraries and tools available for JSON. However, in the context of our search for a better markup syntax, JSON (as well as all variations of it) is not an option. Later on we'll have a look at a more complete HTML example that confirms our conclusion.
+    At this point you hopefully agree that we can stop further investigation and move on. The JSON syntax is a bad fit for describing markup code like HTML documents in a human-friendly way. That doesn't mean of course that 'JSON is bad'. JSON is a good choice in many cases. It is a native part of JavasSript, well-supported in most programming languages, and there are lots of libraries and tools available for JSON. However, in the context of our search for a better markup syntax, JSON (as well as all variations of it) is not an option. Later we'll have a look at a more complete HTML example that confirms our conclusion.
 ]

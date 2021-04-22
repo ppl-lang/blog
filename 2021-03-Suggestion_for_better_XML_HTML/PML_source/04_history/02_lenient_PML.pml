@@ -1,6 +1,6 @@
 [ch Lenient Syntax in PML id=lenient_PML
 
-    An important aspect of PML is the parser's ability to work in [i lenient mode]. This mode supports very targeted syntax simplifications, aiming to eliminate as much "noise" as possible. It should be [i easy] to write articles and books in PML. Here is an example to illustrate the advantage of the [i lenient syntax]:
+    An important aspect of PML is the parser's ability to work in [i lenient mode]. This mode supports targeted syntax simplifications, aiming to eliminate as much "noise" as possible. It should be [i easy] to write articles and books in PML. Here is an example to illustrate the advantage of the [i lenient syntax]:
 
     This is the code of a simple PML document, written in strict pXML:
 
@@ -55,7 +55,7 @@
         ]
     ]
 
-    If you want to try out the above code, you can proceed like this:
+    If you want to try the above code, you can proceed like this:
     [list
         [el [link url=https://www.pml-lang.dev/downloads/install.html text=Download] the [i PML to HTML Converter]]
         
