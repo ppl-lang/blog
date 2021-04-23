@@ -30,9 +30,9 @@
             This is important because the brackets have to be escaped in normal text. I didn't find any reliable statistics, but my guess would be that [c ()] is used often, while the others are used rarely, maybe in this order: [c {}], [c \[\]], and [c <>].
         ]
     ]
-    The best option is to use [c \[\]], because this pair is easy to write (no need for [c Shift] on most keyboards), and square brackets occur rarely in normal text. Moreover, it creates a clear distinction between the new pXML syntax ([c \[\]]), XML/HTML ([c <>]), and source code (which often uses [c {}]).
+    The best option is to use [c \[\]], because this pair is easy to write (no need for [c Shift] on most keyboards), and square brackets rarely occur in normal text. Moreover, it creates a clear distinction between the new pXML syntax ([c \[\]]), XML/HTML ([c <>]), and source code (which often uses [c {}]).
 
-    Hence the final pXML code becomes:
+    Hence, the final pXML code becomes:
     [code
         [i foo]
     code]
@@ -41,7 +41,7 @@
         <i>foo</i>
     code]
 
-    Another advantage of the new syntax is that bracket matching in text editors (available in most modern versions) becomes more useful. In the case of XML/HTML, the [c <] of the opening tag matches only the [c >] of the [i opening] tag, which is of little use. In VSCode it looks like this:
+    Another advantage of the new syntax is that bracket matching in text editors (available in most modern versions) becomes more useful. For XML/HTML, the [c <] of the opening tag matches only the [c >] of the [i opening] tag, which is of little use. In VSCode it looks like this:
     [image source=images/bracket_matching_XML.png border=yes align=left width=120 html_alt=XML bracket matching in VSCode]
     
     In pXML the [c \[] of the opening tag matches the [c \]] of the [i closing] tag, which is much more helpful, especially in case of elements with lots of nested content. VSCode example:

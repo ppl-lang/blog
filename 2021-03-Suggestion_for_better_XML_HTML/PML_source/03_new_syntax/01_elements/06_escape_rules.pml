@@ -2,7 +2,7 @@
 
     pXML uses the backslash ([c \\ ]) as escape character.
 
-    There are three characters that must always be escaped in text:
+    Three characters must always be escaped in text:
     [table_data
         Character	Escape Token
         -

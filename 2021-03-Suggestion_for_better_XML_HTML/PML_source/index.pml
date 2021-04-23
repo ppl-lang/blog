@@ -1,6 +1,6 @@
 [doc title = Suggestion For a Better XML/HTML Syntax \
     authors = Christian Neumanns \
-    date = 2021-03-10
+    date = 2021-04-20
     [- TOC_position = top -]
 
     [- written in PML (https://www.pml-lang.dev) -]

@@ -35,7 +35,7 @@
 
     Although the pXML syntax is less verbose and different from XML, all great additions that are part of the XML ecosystem can still be used. Once a pXML document is parsed into an XML tree, documents can be validated, queried, modified, and transformed.
     
-    Well designed syntax increases productivity, reduces errors, eases maintenance, and improves space and time efficiency.
+    Well-designed syntax increases productivity, reduces errors, eases maintenance, and improves space and time efficiency.
 
     Syntax matters!
 ]

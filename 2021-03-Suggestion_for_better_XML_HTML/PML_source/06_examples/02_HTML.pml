@@ -100,7 +100,7 @@
 
     [b PML]
 
-    As said already, PML has a [xref node_id=lenient_PML text=lenient syntax mode] that allows for very succinct markup code:
+    As said already, PML has a [xref node_id=lenient_PML text=lenient syntax mode] that allows for succinct markup code:
 
     [code lang = none
         [ch Harmonic States

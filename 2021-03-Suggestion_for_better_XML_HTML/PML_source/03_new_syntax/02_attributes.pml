@@ -17,7 +17,7 @@
     As can be seen, the two syntaxes are similar. There are two obvious differences:
     [list
         [el
-            In pXML, attributes are embedded in parenthesis: [c (...)]. The syntax is similar to function argument assignments in some programming languages.
+            In pXML, attributes are embedded in parentheses: [c (...)]. The syntax is like function argument assignments in some programming languages.
         ]
         
         [el
@@ -54,7 +54,7 @@
 
     In XML, attribute names are not quoted (unlike in JSON), and they must respect the same rules as we [xref node_id=name_rules text=previously] saw for element tag names.
 
-    In order to stay compatible with XML, pXML applies the same rules. Attribute names:
+    To stay compatible with XML, pXML applies the same rules. Attribute names:
     [list
         [el must start with a letter or underscore]
         [el can contain letters, digits, hyphens, underscores, and periods (no spaces)]
@@ -210,7 +210,7 @@
     code]
     The second version (using attributes) is slightly shorter, easier to read and write, and more familiar to people used to the XML attributes syntax. However, both versions are parsed into the same tree structure.
 
-    This is in contrast to XML, where attributes and elements are different. In XML, the API used to access attributes is different from the API for child elements. Hence, a program that reads an XML structure must know if a value is defined as an attribute or an element. Moreover, if a value that was initially defined as an attribute, is later defined as an element (or vice versa), then the program that reads the value must be updated. This is not necessary in pXML.
+    This contrasts with XML, where attributes and elements are different. In XML, the API used to access attributes is different from the API for child elements. Hence, a program that reads an XML structure must know if a value is an attribute or an element. Moreover, if a value that was initially defined as an attribute, is later defined as an element (or vice versa), then the program that reads the value must be updated. This is not necessary in pXML.
 ]
 
 ]
